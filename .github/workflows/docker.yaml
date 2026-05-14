@@ -2,9 +2,9 @@ name: Build and Push Docker Image
 
 on:
   workflow_run:
-    workflows: ["Build and Test"]   # Nazwa workflow zdefiniowana w build.yml
+    workflows: ["Build and Test"]
     types:
-      - completed                   # Uruchom po zakończeniu workflow
+      - completed
     branches: [main]
 
 jobs:
